@@ -11,6 +11,7 @@ document.addEventListener('click',(e)=>{
             alert('This item is already added to the cart');
             return 
         }
+        document.querySelector('.cart-number').innerText = parseInt(document.querySelector('.cart-number').innerText)+1
         const cart_item = document.createElement('div');
         cart_item.classList.add('cart-row');
         cart_item.setAttribute('id',`in-cart-${id}`);

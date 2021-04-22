@@ -355,3 +355,30 @@ footer .footer-icons{
     transform: scale(1.5);
     filter: brightness(130%);
 }
+header ul a{
+    color:white;
+    text-decoration:none;
+    cursor: pointer;
+}
+.fa-shopping-cart{
+    color:white;
+}
+.cart-holder{
+    border:2px solid #56CCF2;
+    border-radius: 7px;;
+    padding:2px 10px;
+    position:relative;
+}
+.cart-number{
+    position:absolute;
+    color:#56CCF2;
+    font-size: 20px;
+    top:-10px;
+    right:-15px;
+}
+
+@media(max-width:600px){
+    header li{
+        margin:0px 20px;
+    }
+}
