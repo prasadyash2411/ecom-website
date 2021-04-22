@@ -28,6 +28,15 @@ document.addEventListener('click',(e)=>{
         <button>REMOVE</button>
     </span>`
         cart_items.appendChild(cart_item)
+       
+        const container = document.getElementById('container');
+        const notification = document.createElement('div');
+        notification.classList.add('notification');
+        notification.innerHTML = `<h4>Your Product : <span>${name}</span> is added to the cart<h4>`;
+        container.appendChild(notification);
+        setTimeout(()=>{
+            notification.remove();
+        },5000)
     }
 
     if (e.target.className=='purchase-btn'){
@@ -43,3 +52,4 @@ document.addEventListener('click',(e)=>{
         e.target.parentNode.parentNode.remove()
     }
 })
+
