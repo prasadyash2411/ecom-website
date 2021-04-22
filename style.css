@@ -179,7 +179,7 @@ section h2{
     display:flex;
 }
 .cart-header{
-    font-size:20px;
+    font-size:1.2rem;
     font-weight: bold;
 }
 .cart-item{
@@ -230,12 +230,12 @@ section h2{
 .cart-total{
     display:flex;
     flex-direction: row-reverse;
-    font-size:20px;
+    font-size:1.2rem;
     margin:20px;
 }
 .cart-total .total-title{
     margin-right:10px;
-    font-size:24px;
+    font-size:1.5rem;
 }
 
 .purchase-btn{
@@ -243,13 +243,14 @@ section h2{
     align-items: center;
     justify-content: center;
     margin:auto;
+    margin-top: 50px;
     background: #56CCF2;
     color:white;
-    font-size:26px;
+    font-size:1.2rem;
     font-weight: bold;
     border:none;
     border-radius:8%;
-    padding:15px;
+    padding:12px;
     cursor: pointer;
 }
 .purchase-btn:hover{
@@ -381,4 +382,48 @@ header ul a{
     header li{
         margin:0px 20px;
     }
+}
+#cart{
+    margin:0px;
+    display: none;
+    position:absolute;
+    top:50px;
+    right:0;
+    background-color:rgb(255, 255, 255);
+    border:1px solid rgb(177, 103, 103);
+    min-height:50vh;
+}
+#cart h2{
+    margin:20px 0px;
+    padding:0;
+}
+
+.cart-btn-bottom{
+    display:flex;
+    padding:15px;
+    background-color: #777;
+    border:none;
+    border-radius:7px;
+    margin:auto;
+    cursor:pointer;
+}
+.cart-bottom{
+    text-decoration: none;
+    color:#56CCF2;
+    font-size: 16px;
+    font-weight:700;
+}
+.cancel{
+    position:absolute;
+    cursor:pointer;
+    color:rgb(121, 117, 117);
+    top:0;
+    right:0;
+    margin:20px;
+    background:none;
+    font-size:16px;
+    font-weight: 700;
+    border:1px solid rgb(121, 117, 117);
+    border-radius:7px;
+    padding:5px;
 }
