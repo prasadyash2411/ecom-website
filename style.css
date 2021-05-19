@@ -16,6 +16,11 @@ header {
     background:#777;
     color:white;
 }
+
+#cart{
+    position: fixed;
+    height: 95%;
+}
 header h1{
     padding:40px;
     font-size:100px;
@@ -28,6 +33,11 @@ header ul{
     justify-content: center;
     list-style-type: none;
     border-bottom:0.1rem solid white;
+    position: fixed;
+    top: 0%;
+    background: black;
+    width: 100%;
+    z-index: 1;
 }
 header li{
     margin:0px 40px;
@@ -300,7 +310,7 @@ footer .footer-icons{
 #about h3{
     text-align: center;
     font-size:25px;
-    margin:20px; 
+    margin:20px;
 }
 #about div{
     /* display:flex; */
@@ -343,7 +353,7 @@ footer .footer-icons{
     overflow: hidden;
 }
 .prod-images{
-    transform-origin: center center; 
+    transform-origin: center center;
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -368,7 +378,8 @@ header ul a{
     border:2px solid #56CCF2;
     border-radius: 7px;;
     padding:2px 10px;
-    position:relative;
+    position: absolute;
+    right: 2%;
 }
 .cart-number{
     position:absolute;
@@ -386,8 +397,9 @@ header ul a{
 #cart{
     margin:0px;
     display: none;
-    position:absolute;
+    position:fixed;
     top:50px;
+    height: 95%;
     right:0;
     background-color:rgb(255, 255, 255);
     border:1px solid rgb(177, 103, 103);
