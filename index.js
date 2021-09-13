@@ -1,6 +1,9 @@
 const cart_items = document.querySelector('#cart .cart-items');
-document.addEventListener('click',(e)=>{
-    
+
+
+const parentContainer = document.getElementById('EcommerceContainer');
+parentContainer.addEventListener('click',(e)=>{
+
     if (e.target.className=='shop-item-button'){
         const id = e.target.parentNode.parentNode.id
         const name = document.querySelector(`#${id} h3`).innerText;
@@ -9,7 +12,7 @@ document.addEventListener('click',(e)=>{
         let total_cart_price = document.querySelector('#total-value').innerText;
         if (document.querySelector(`#in-cart-${id}`)){
             alert('This item is already added to the cart');
-            return 
+            return
         }
         document.querySelector('.cart-number').innerText = parseInt(document.querySelector('.cart-number').innerText)+1
         const cart_item = document.createElement('div');
@@ -29,7 +32,7 @@ document.addEventListener('click',(e)=>{
         <button>REMOVE</button>
     </span>`
         cart_items.appendChild(cart_item)
-       
+
         const container = document.getElementById('container');
         const notification = document.createElement('div');
         notification.classList.add('notification');
